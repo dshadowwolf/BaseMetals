@@ -1,0 +1,60 @@
+#	modid = BaseMetals.MODID,
+#	name = BaseMetals.NAME,
+#	version = BaseMetals.VERSION,
+#	dependencies = "required-after:forge@[14.23.1.2592,);after:tconstruct;after:conarm;after:thaumcraft;after:ic2;before:buildingbricks",
+#	acceptedMinecraftVersions = "[1.12,)",
+#	certificateFingerprint = "@FINGERPRINT@",
+#	updateJSON = BaseMetals.UPDATEJSON)
+
+modLoader="javafml"
+loaderVersion="[25,)"
+
+[[mods]]
+modId = "basemetals"
+version="${project.version}"
+displayName="BaseMetals"
+updateJSONURL="https://raw.githubusercontent.com/MinecraftModDevelopmentMods/BaseMetals/master/update.json"
+displayURL="https://minecraft.curseforge.com/projects/base-metals"
+logoFile="" # A file name (in the root of the mod JAR) containing a logo for display
+credits="Cyanobacterium (aka DrCyano) For starting the project & geologists everywhere. SeqSEE for helping with shields. Vase of Petunias (aka TheUnknownFew) for creating Javadocs, YaibaToKen for Construct's Armory integration"
+authors="jriwanek, dshadowwolf, cyanobacterium and others"
+description='''
+long form description here - attention @jriwanek!
+'''
+
+[[dependencies.basemetals]]
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[25,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.basemetals]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.13.2]"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.basemetals]]
+    modId="tconstruct"
+	mandatory=false
+	versionRange="[2.10,)"
+	ordering="AFTER"
+	side="BOTH"
+[[dependencies.basemetals]]
+    modId="conarm"
+	mandatory=false
+	versionRange="[1.1.2,)"
+	ordering="AFTER"
+	side="BOTH"
+[[dependencies.basemetals]]
+    modId="thaumcraft"
+	mandatory=false
+	versionRange="[6.1.BETA24,)"
+	ordering="AFTER"
+	side="BOTH"
+[[dependencies.basemetals]]
+    modId="ic2"
+	mandatory=false
+	versionRange="[2.8.73-ex112,)"
+	ordering="AFTER"
+	side="BOTH"
